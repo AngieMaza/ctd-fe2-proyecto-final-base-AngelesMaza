@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ContenedorNoticias = styled.div`
+export const NewsContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,7 +10,7 @@ export const ContenedorNoticias = styled.div`
   padding: 0 1rem;
 `;
 
-export const TituloNoticias = styled.h2`
+export const NewsTitle = styled.h2`
   font-size: 3.5rem;
   font-weight: bold;
   margin: 2rem 0;
@@ -23,7 +23,7 @@ export const TituloNoticias = styled.h2`
   letter-spacing: 0.1rem;
 `;
 
-export const ListaNoticias = styled.div`
+export const NewsList = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -33,7 +33,7 @@ export const ListaNoticias = styled.div`
   padding: 0;
 `;
 
-export const TarjetaNoticia = styled.div`
+export const NewsCard = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -47,14 +47,13 @@ export const TarjetaNoticia = styled.div`
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
   position: relative;
-
   &:hover {
     box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
     cursor: pointer;
   }
 `;
 
-export const ImagenTarjetaNoticia = styled.img`
+export const NewsCardImage = styled.img`
   width: 100%;
   height: 40%;
   object-fit: cover;
@@ -62,7 +61,7 @@ export const ImagenTarjetaNoticia = styled.img`
   border-top-right-radius: 10px;
 `;
 
-export const TituloTarjetaNoticia = styled.h3`
+export const NewsCardTitle = styled.h3`
   font-size: 1.3rem;
   font-weight: bold;
   margin: 1rem auto;
@@ -70,7 +69,7 @@ export const TituloTarjetaNoticia = styled.h3`
   height: 3.5rem;
 `;
 
-export const DescripcionTarjetaNoticia = styled.p`
+export const NewsCardDescription = styled.p`
   width: 100%;
   max-width: 100%;
   font-size: 1.2rem;
@@ -78,14 +77,14 @@ export const DescripcionTarjetaNoticia = styled.p`
   padding: 0;
 `;
 
-export const FechaTarjetaNoticia = styled.p`
+export const NewsCardDate = styled.p`
   font-size: 0.9rem;
   margin: 0.3rem auto;
   width: 90%;
   text-align: right;
 `;
 
-export const BotonLectura = styled.button`
+export const ReadButton = styled.button`
   width: 100%;
   border: none;
   color: #fff;
@@ -106,7 +105,7 @@ export const BotonLectura = styled.button`
   bottom: 0px;
 `;
 
-export const ContenedorModal = styled.div`
+export const ModalContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -122,7 +121,7 @@ export const ContenedorModal = styled.div`
   background-color: rgba(0, 0, 0, 0.5);
 `;
 
-export const TarjetaModal = styled.div`
+export const ModalCard = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -157,12 +156,12 @@ export const CloseButton = styled.button`
   }
 `;
 
-export const ImagenModal = styled.img`
+export const ModalImage = styled.img`
   width: 60%;
   height: 100%;
 `;
 
-export const CotenedorTexto = styled.div`
+export const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -173,7 +172,7 @@ export const CotenedorTexto = styled.div`
   margin-top: 5rem;
 `;
 
-export const TituloModal = styled.h3`
+export const ModalTitle = styled.h3`
   font-size: 1.5rem;
   font-weight: bold;
   margin: 0;
@@ -182,7 +181,7 @@ export const TituloModal = styled.h3`
   width: 100%;
 `;
 
-export const DescripcionModal = styled.p`
+export const ModalDescription = styled.p`
   width: 100%;
   max-width: 100%;
   max-height: 55%;
@@ -193,7 +192,7 @@ export const DescripcionModal = styled.p`
   overflow-y: auto;
 `;
 
-export const BotonSuscribir = styled.button`
+export const SuscribeButton = styled.button`
   width: 20%;
   min-width: 200px;
   border: none;

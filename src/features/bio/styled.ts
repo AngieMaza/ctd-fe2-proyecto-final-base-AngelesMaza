@@ -9,28 +9,28 @@ export const BioContainer = styled.div`
   height: 100%;
 `;
 export const BioImage = styled.img`
-max-width: 200px;
-max-height: 300px;
-margin-bottom: 1rem;
+  max-width: 200px;
+  max-height: 300px;
+  margin-bottom: 1rem;
 `;
 export const BioTitle = styled.h3`
-font-size: 2em;
-margin-bottom: 1rem;
+  font-size: 2em;
+  margin-bottom: 1rem;
 `;
 export const BioDescription = styled.p`
-font-size: 1.3em;
-width: 70%;
-margin: 1rem auto;
+  font-size: 1.3em;
+  width: 70%;
+  margin: 1rem auto;
 `;
 export const ButtonsContainer = styled.div`
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-width: 100%;
-margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1rem;
 `;
-export const BioButton = styled.button<{isActive : boolean}>`
+export const BioButton = styled.button<{ isActive: boolean }>`
   border-radius: 5px;
   border: 1px solid darkgray;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
@@ -42,12 +42,12 @@ export const BioButton = styled.button<{isActive : boolean}>`
     cursor: pointer;
   }
   ${(props) =>
-    props.isActive
-      && css`
-          background-color: #fdd835;
-          color: whitesmoke;
-          text-shadow: 2px 2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000,
-            -2px -2px 0 #000000, 2px 0px 0 #000000, 0px 2px 0 #000000,
-            -2px 0px 0 #000000, 0px -2px 0 #000000;
-        `}
+    props.isActive &&
+    css`
+      background-color: #fdd835;
+      color: whitesmoke;
+      text-shadow: 2px 2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000,
+        -2px -2px 0 #000000, 2px 0px 0 #000000, 0px 2px 0 #000000,
+        -2px 0px 0 #000000, 0px -2px 0 #000000;
+    `}
 `;

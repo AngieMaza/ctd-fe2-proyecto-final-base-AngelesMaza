@@ -10,7 +10,8 @@ const Bio = () => {
 
   const createButtons = () => {
     return Object.keys(SIMPSONS_INFO).map((name: string) => (
-      <Styled.BioButton isActive={bioActive.id === name ? true : false}
+      <Styled.BioButton
+        isActive={bioActive.id === name ? true : false}
         key={name as string}
         onClick={() => onClick(name as SimpsonsNames)}
       >
@@ -24,10 +25,7 @@ const Bio = () => {
       <Styled.ButtonsContainer>{createButtons()}</Styled.ButtonsContainer>
       <div>
         <div>
-          <Styled.BioImage
-            src={bioActive.image}
-            alt={bioActive.name}
-          />
+          <Styled.BioImage src={bioActive.image} alt={bioActive.name} />
         </div>
         <div>
           <Styled.BioTitle>{bioActive.name}</Styled.BioTitle>
